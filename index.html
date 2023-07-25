@@ -33,9 +33,9 @@
  <header>
     <!---------nav bar start------------------>
     <nav>
-        <div class="navbar bg-[#F85559] rounded-full w-11/12 mx-auto mt-4">
-            <div class="navbar-start">
-                <ul class="flex justify-between gap-6 items-center text-lg font-medium ml-10">
+        <div class="navbar bg-white lg:bg-[#F85559] rounded-full mx-auto mt-4 p-5">
+            <div class="hidden lg:block navbar-start">
+                <ul class="flex justify-between items-center text-lg font-medium ml-10 text-white">
                     <li><a>Home</a></li>
                     <li><a>About Us</a></li>
                     <li><a>Shop</a></li>
@@ -52,22 +52,28 @@
                 </ul>
               </div> -->
             </div>
-            <div class="navbar-center">
+            <div class="navbar-center ml-7">
                 <img src="./images/logo.png" alt="">
-              <a class="text-4xl font-bold">Fruit Burst</a>
+              <a class="text-4xl font-bold lg:text-white">Fruit Burst</a>
             </div>
             <div class="navbar-end">
              <!-- input -->
-             <div class="form-control w-full max-w-xs flex relative">
+             <div class="hidden lg:block form-control w-full max-w-xs flex relative">
                 <input type="text" placeholder="Search here" class="input rounded-3xl bg-red-50 w-full max-w-xs" />
-                <img src="./images/Frame (1).svg" alt="" class="w-5 h-5 absolute left-72 top-3">
+                <img src="./images/Frame (1).svg" alt="" class="hidden lg:block w-5 h-5 absolute left-72 top-3">
             </div>
-             <button class="btn btn-ghost btn-circle">
-                <div class="indicator">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" /></svg>
-                  <span class="badge badge-xs badge-primary indicator-item"></span>
-                </div>
-              </button>
+               <div class="lg:hidden dropdown mr-16">
+                <label tabindex="0" class="lg:hidden btn btn-ghost btn-circle">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+                </label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-28">
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                  </ul>
+                </ul>
+              </div> 
             </div>
           </div>
     </nav>
